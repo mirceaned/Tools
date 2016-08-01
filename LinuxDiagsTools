@@ -4,7 +4,7 @@ dmesg
 #attach to proces to get info about system calls - useful for a hung process
 strace -p <pid>
  
-#show memory consumption
+#show memory consumption (physical and swap)
 free 
  
 #show disk space consumption
@@ -15,7 +15,7 @@ df -h
 top
  
 #process list, with optional filtering
-ps aux | grep IxNetwork
+ps aux | grep <process name>
  
 #get stack trace of mono process
 kill -QUIT <pid> 
@@ -30,4 +30,4 @@ uptime
 netstat -t
  
 #exit code for last command
- echo $?
+echo $?
