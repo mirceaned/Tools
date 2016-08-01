@@ -1,11 +1,9 @@
 Init
 
 Install sosex (32 and 64 versions) and psscor2, psscor4 (32 and 64 versions). It's a matter of copying the dlls in the 32 and 64 bits versions of the debugging tools.
-.loadby sos mscorwks # load sos, up to IxN 6.10 (.Net 2.0) (after attaching to process)
-.loadby sos clr # load sos, starting IxN 6.20 (.Net 4.0)
+.loadby sos clr # load sos, starting .Net 4.0
 .load sosex # load sosex extension
-.load psscor2 # load psscor2 extension (up to IxN 6.10, .Net 2.0)
-.load psscor4 # load psscor extension (starting IxN 6.20, .Net 4.0)
+.load psscor4 # load psscor extension (starting .Net 4.0)
 .chain # display loaded modules
 .reload /f  # force reload for all symbols 
 .reload /f StatEngineProxy.dll  # reload symbol for specified dll
