@@ -1,4 +1,4 @@
-Collecting memory dumps
+**Collecting memory dumps**
 
 - If the suspicious mem increase happens when running multiple iterations, run one or few iterations.
 - If the test is not executing multiple iterations, just bring the system to an initial state.
@@ -11,7 +11,7 @@ Collecting memory dumps
 - If the amount is almost the same, no significant mem leak was detected. You could continue running iterations.
 - If the amount of memory is much larger, there is a suspicion of leaks. Take a mem dump.
 
-Narrowing down the cause - managed or unmanaged
+**Narrowing down the cause - managed or unmanaged**
 
 Perfmon is one of the tools which could be used for pointing to the type problem.
 - Those 2 counters need to be analyzed:
@@ -20,13 +20,13 @@ Perfmon is one of the tools which could be used for pointing to the type problem
 - If the private bytes is increasing but the bytes in all heaps remain constant, the problem is located in native code.
 - If both are increasing then it's a managed memory consumption.
 
-Debug unmanaged leak
+**Debug unmanaged leak**
 
 1. Install Debug Diag
 2. instrument executable, save dump
 3. Load dump file and start analysis
  
-Using .Net Memory Profiler for memory related investigation
+**Using .Net Memory Profiler for memory related investigation**
 
 - Load mem dump or attach to process (preferable)
 - Check overview tab
