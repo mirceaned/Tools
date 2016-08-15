@@ -1,4 +1,4 @@
-#print kernel messages such as oom
+*print kernel messages such as oom*
 dmesg 
  
 #attach to proces to get info about system calls - useful for a hung process
