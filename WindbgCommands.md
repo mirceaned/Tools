@@ -1,3 +1,4 @@
+<pre>
 Init
 
 Install sosex (32 and 64 versions) and psscor4 (32 and 64 versions). 
@@ -66,3 +67,4 @@ sxe clr # break on clr exceptions
 sxd clr # disable break on clr exceptions
 sxe 0xe0434f4d # break on exceptions having the specified code (in this case clr ones)
 !dae # display all exceptions (psscor)
+</pre>
