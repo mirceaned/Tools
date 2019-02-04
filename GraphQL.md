@@ -15,16 +15,18 @@
 ## GraphQL Example
 
 - define a schema
-```json
+
+```
 people(id: ID): Person
-Person {
+Person: {
   name: String,
   height: Int,
   mass: Float
 }
 ```
-- send a query
-```json
+
+- send a query (HTML POST)
+```
 {
   allPeople {
     people {
