@@ -15,14 +15,16 @@
 ## GraphQL Example
 
 - define a schema
+```json
 people(id: ID): Person
 Person {
   name: String,
   height: Int,
   mass: Float
 }
-
+```
 - send a query
+```json
 {
   allPeople {
     people {
@@ -32,8 +34,10 @@ Person {
     }
   }
 }
+```
 
 - receive a response
+```json
 {
   "data": {
     "allPeople": {
@@ -51,6 +55,7 @@ Person {
       }
    }
 }   
+```
 
 ## Cooler than the REST
 - avoids over-fetching and under-fetching
