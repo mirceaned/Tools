@@ -1,29 +1,28 @@
 # APIs are in the house!
 - your thermostat/smartwatch/Alexa
 - twitter, linkedin
-- wheather
+- weather
 
 ## How?
-- to consume APIs you need a client program and the expected shape of the query (you can be a system)
+- to consume APIs you need a client program and the expected shape of the query (you can also be a robot)
 - to produce APIs you need to implement a server that provides queries, mutations and subscriptions
 
 ## Why GraphQL? Why?
-- a specification for APIs (Application Prograaming Interfaces)
+- a specification for APIs (Application Programming Interfaces)
 - modern replacement for RESTful API
 - developed by Facebook to help internal and external teams to query data organized in graphs (posts, friends)
 
 ## GraphQL Example
 
-- schema
+- define a schema
 people(id: ID): Person
-
 Person {
   name: String,
   height: Int,
   mass: Float
 }
 
-- query
+- send a query
 {
   allPeople {
     people {
@@ -34,7 +33,7 @@ Person {
   }
 }
 
-- response
+- receive a response
 {
   "data": {
     "allPeople": {
@@ -59,5 +58,5 @@ Person {
 - unlimited depth of queries, helps with roundtrips for phone use
 - better dev tools
 
-## More info?
+## Curious for more?
 - GraphQL playground: https://graphql.org/swapi-graphql/
