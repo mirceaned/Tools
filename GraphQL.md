@@ -1,13 +1,13 @@
-# APIs are everywhere
-- your thermostat/smartwatch
+# APIs are in the house!
+- your thermostat/smartwatch/Alexa
 - twitter, linkedin
 - wheather
 
-## How do we make use of all this?
-- to consume APIs you need a client program and the expected shape of the query
-- to produce APIs you need to implement a server that provides data queries, mutations and subscriptions
+## How?
+- to consume APIs you need a client program and the expected shape of the query (you can be a system)
+- to produce APIs you need to implement a server that provides queries, mutations and subscriptions
 
-## What is GraphQL?
+## Why GraphQL? Why?
 - a specification for APIs (Application Prograaming Interfaces)
 - modern replacement for RESTful API
 - developed by Facebook to help internal and external teams to query data organized in graphs (posts, friends)
@@ -53,11 +53,11 @@ Person {
    }
 }   
 
-## Benefits vs REST
+## Cooler than the REST
 - avoids over-fetching and under-fetching
 - single endpoint, simplifies maintenance and security
-- unlimited depth of queries
-- better tools
+- unlimited depth of queries, helps with roundtrips for phone use
+- better dev tools
 
 ## More info?
-- GrpahQL playground: https://graphql.org/swapi-graphql/
+- GraphQL playground: https://graphql.org/swapi-graphql/
